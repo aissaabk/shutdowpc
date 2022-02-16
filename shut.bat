@@ -12,4 +12,5 @@ tasklist /fi "USERNAME ne NT AUTHORITY\SYSTEM" /fi "STATUS eq running" | find  "
 if "%ERRORLEVEL%"=="0" (cls &&echo %app% is running&&goto loop) else (cls&&echo pc shutdown after 20s &&echo timeout 20 &&shutdown /s /t 10 ) 
 :shutdown 
 shutdown /s /t %timemin%
-
+:end
+echo there is no error :
