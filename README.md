@@ -17,5 +17,12 @@
 
 please subscribe my channel for more script and info
 https://www.youtube.com/channel/UCdxy3IB2kmYk3dvCyxFCd6g
+
+video about script usage
+
+https://youtu.be/HZK1CPyx2Ok
+
+
 page facebook
+
 https://www.facebook.com/devbelmel
