@@ -5,7 +5,7 @@ echo 1- After a specified time
 echo 2- After completing the tasks of the specified program
 set /p id="Enter choice: "
 echo %id%
-if %id% EQU 1 (set /p ti="Enter time in min : "&&set /a "timemin=ti*60"&&The device will turn off after the specified time &&timeout 10&& goto shutdown ) else ( set /p app="enter name application complete like Viber.exe : ")
+if %id% EQU 1 (set /p ti="Enter time in min : "&&set /a "timemin=ti*60"&&echo The device will turn off after the specified time &&timeout 10&& goto shutdown ) else ( set /p app="enter name application complete like Viber.exe : ")
 echo %app%
 :loop
 tasklist /fi "USERNAME ne NT AUTHORITY\SYSTEM" /fi "STATUS eq running" | find  "%app%"
