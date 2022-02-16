@@ -9,7 +9,7 @@ if %id% EQU 1 (set /p ti="Enter time in min : "&&set /a "timemin=ti*60"&&echo Th
 echo %app%
 :loop
 tasklist /fi "USERNAME ne NT AUTHORITY\SYSTEM" /fi "STATUS eq running" | find  "%app%"
-if "%ERRORLEVEL%"=="0" (cls &&echo %app% is running&&goto loop) else (cls&&echo pc shutdown after 20s &&echo timeout 20 &&shutdown /s /t 10 goto end) 
+if "%ERRORLEVEL%"=="0" (cls &&echo %app% is running&&goto loop) else (cls&&echo pc shutdown after 20s &&echo timeout 20 &&shutdown /s /t 10 &&goto end) 
 :shutdown 
 shutdown /s /t %timemin%
 :end
